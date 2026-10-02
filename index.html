@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Developer & Computer Repair</title>
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+
+<!-- Social buttons: always on the left while scrolling -->
+<aside class="side" aria-label="Social links">
+  <a class="s-wa" data-link="whatsapp" href="#" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+  <a class="s-ig" data-link="instagram" href="#" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+  <a class="s-fb" data-link="facebook" href="#" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+  <a class="s-gm" data-link="mail" href="#" aria-label="Gmail"><svg viewBox="52 42 88 66" aria-hidden="true"><path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/><path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/><path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/><path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/><path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/></svg></a>
+</aside>
+<a href="#home" class="totop" id="totop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<div class="top"><div class="wrap">
+  <span class="fu">Follow Us:
+    <a data-link="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a data-link="whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a data-link="mail" href="#" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+  </span>
+  <span class="tr">
+    <span><i class="fa-solid fa-phone"></i>Call: <a data-link="tel" data-c="phoneDisplay" href="#"></a></span>
+    <span><i class="fa-solid fa-envelope"></i>Email: <a data-link="mail" data-c="email" href="#"></a></span>
+  </span>
+</div></div>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#home"><img src="logo.svg" alt="Logo" width="48" height="48"><span data-c="name"></span></a>
+  <nav aria-label="Main"><ul id="links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li>
+    <!-- To show Videos in the header, add this line here:  <li><a href="#videos">Videos</a></li> -->
+    <li class="mq"><a class="btn" data-quote href="#">Get a Quote</a></li>
+  </ul></nav>
+  <a class="btn quote" data-quote href="#">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+  <button id="menu" aria-expanded="false" aria-controls="links" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+</div></header>
+
+<!-- HERO with background video -->
+<section class="hero" id="home">
+  <video class="bgvid" autoplay muted loop playsinline preload="auto"><source src="videos/hero.mp4" type="video/mp4"></video>
+  <div class="shade"></div>
+  <div class="hero-in">
+    <div class="slides">
+      <div class="slide on"><h1>Websites that bring you customers</h1><p>Fast, mobile-friendly websites for shops, schools and small businesses.</p><a class="btn pulse" data-link="whatsapp" target="_blank" rel="noopener" href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="slide"><h1>Laptop or PC not working? I fix it.</h1><p>Screen, keyboard, battery, RAM, SSD, overheating and no-power faults, repaired properly.</p><a class="btn pulse" data-link="whatsapp" target="_blank" rel="noopener" href="#">Book a Repair <i class="fa-solid fa-arrow-right"></i></a></div>
+      <div class="slide"><h1>Software, set up and sorted</h1><p>Windows install, drivers, virus removal, backup and speed-up for slow computers.</p><a class="btn pulse" data-link="whatsapp" target="_blank" rel="noopener" href="#">Get Help <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+    <button class="arrow prev" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="arrow next" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+    <div class="dots"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+  </div>
+</section>
+
+<!-- ABOUT with your photo -->
+<section id="about"><div class="wrap two">
+  <div class="photo rv" data-ph="Add images/profile.jpg"><img src="images/profile.jpg" alt="My photo"></div>
+  <div class="rv">
+    <small class="tag">About me</small>
+    <h2>Hi, I'm <span data-c="name"></span></h2>
+    <div class="glass"><p data-c="aboutText"></p><p><i class="fa-solid fa-location-dot"></i> <span data-c="city"></span></p></div>
+    <a class="btn" href="#services">What I offer <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div></section>
+
+<section class="proc-sec"><div class="wrap">
+  <div class="head rv"><h2>Our Work Process</h2></div>
+  <div class="proc">
+    <div class="ps rv"><div class="ring"><div class="mid"><div class="n">1</div></div></div><h3>Tell Me Your Need</h3><p>Call or WhatsApp me about your website or repair.</p></div>
+    <div class="ps rv"><div class="ring"><div class="mid"><div class="n">2</div></div></div><h3>Discuss & Get a Quote</h3><p>We agree on price and time before any work starts.</p></div>
+    <div class="ps rv"><div class="ring"><div class="mid"><div class="n">3</div></div></div><h3>Work Delivered</h3><p>Your website goes live or your device works again.</p></div>
+  </div>
+</div></section>
+
+<section class="soft" id="services"><div class="wrap wide">
+  <div class="head rv"><small class="pill">Services</small><h2>Explore Our Services</h2></div>
+  <div class="svgrid">
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-laptop-code"></i></div><h3>Website Design & Development</h3><p>I build fast, <b>responsive websites</b> using <b>HTML, CSS and JavaScript</b> that look great on mobile, tablet and desktop.</p><a data-wa="Website Design & Development" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-store"></i></div><h3>Business & Portfolio Websites</h3><p><b>Websites for shops, coaching centres, clinics and freelancers</b> with WhatsApp button, contact details, photos and videos.</p><a data-wa="Business & Portfolio Websites" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Website Update & Maintenance</h3><p>Need changes on your existing site? I <b>fix bugs</b>, <b>update content</b>, improve speed and keep your website running smoothly.</p><a data-wa="Website Update & Maintenance" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-laptop-medical"></i></div><h3>Laptop Repair</h3><p><b>Screen, keyboard, battery, charging port, fan and overheating</b> problems fixed carefully on common laptop brands.</p><a data-wa="Laptop Repair" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-desktop"></i></div><h3>Desktop PC Repair & Assembly</h3><p><b>Desktop fault finding, PSU and motherboard checks</b>, plus assembling a custom PC for office, study or gaming.</p><a data-wa="Desktop PC Repair & Assembly" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-memory"></i></div><h3>RAM & SSD Upgrades</h3><p>Make an old computer fast again with a <b>RAM upgrade</b> or a <b>new SSD</b>, with Windows moved or freshly installed.</p><a data-wa="RAM & SSD Upgrades" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-brands fa-windows"></i></div><h3>Windows & Software Installation</h3><p><b>Windows installation</b>, drivers, MS Office and everyday software set up properly so your computer is ready to use.</p><a data-wa="Windows & Software Installation" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-shield-virus"></i></div><h3>Virus Removal & Security</h3><p><b>Virus, malware and pop-up removal</b>, antivirus setup and safe-use tips to protect your files and passwords.</p><a data-wa="Virus Removal & Security" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="sv rv"><div class="blob"><i class="fa-solid fa-hard-drive"></i></div><h3>Data Backup & Recovery</h3><p><b>Backup of your important files</b> before repair, and help to recover data from a computer or drive that will not open.</p><a data-wa="Data Backup & Recovery" target="_blank" rel="noopener" href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a></div>
+  </div>
+</div></section>
+
+<div class="stats"><div class="wrap grid">
+  <div><strong data-n="20">0</strong><span>Projects done</span></div>
+  <div><strong data-n="50">0</strong><span>Devices repaired</span></div>
+  <div><strong data-n="30">0</strong><span>Happy clients</span></div>
+  <div><strong data-n="2">0</strong><span>Years learning</span></div>
+</div></div>
+
+<!-- PROMO VIDEO BANNER: set the video in contact.js (promo: {...}) -->
+<section class="promo" id="promo">
+  <div class="wrap promo-in">
+    <div class="rv">
+      <h2 data-c="promoTitle"></h2>
+      <p data-c="promoText"></p>
+      <button class="btn light" id="playbtn" type="button">Play Video <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <button class="bigplay" id="playbig" type="button" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+  </div>
+</section>
+<div class="modal" id="modal" hidden>
+  <button class="mclose" type="button" aria-label="Close video"><i class="fa-solid fa-xmark"></i></button>
+  <div class="mbox"><video id="mvid" controls playsinline></video><p id="mhint" hidden>No video yet. Open <b>contact.js</b> and set <b>promo.src</b> to your video file, for example <b>videos/promo.mp4</b>.</p></div>
+</div>
+
+<!-- VIDEOS: shown only if you add videos in contact.js -->
+<section id="videos" hidden><div class="wrap">
+  <div class="head rv" id="vhead" hidden><h2 id="vtitle"></h2></div>
+  <div class="grid" id="vgrid"></div>
+</div></section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="ftop">
+      <a class="logo" href="#home"><img src="logo.svg" alt="Logo" width="44" height="44"><span data-c="name"></span></a>
+      <div class="fsocial">
+        <a data-link="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a data-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a data-link="mail" href="#" aria-label="Gmail"><i class="fa-solid fa-envelope"></i></a>
+        <a data-link="whatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="fmain">
+      <div>
+        <h4>About</h4>
+        <p data-c="footerText"></p>
+        <form id="sub" class="subscribe">
+          <input type="email" placeholder="Your email address" required aria-label="Your email address">
+          <button type="submit" aria-label="Send"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul><li><a href="#home">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Others</h4>
+        <ul><li data-sec="videos" hidden><a href="#videos">Videos</a></li><li><a data-quote href="#">Get a Quote</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacts</h4>
+        <ul class="cont">
+          <li><i class="fa-solid fa-location-dot"></i><span><b>Address:</b> <span data-c="address"></span></span></li>
+          <li><i class="fa-solid fa-phone"></i><span><b>Phone:</b> <a data-link="tel" data-c="phoneDisplay" href="#"></a></span></li>
+          <li><i class="fa-solid fa-envelope"></i><span><b>Email:</b> <a data-link="mail" data-c="email" href="#"></a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© <span data-c="year"></span> <span data-c="name"></span>. All Rights Reserved</div>
+</footer>
+
+<!-- GET A QUOTE popup: all contact options -->
+<div class="modal" id="qmodal" hidden role="dialog" aria-modal="true" aria-labelledby="qtitle">
+  <div class="qbox">
+    <button class="mclose qclose" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <h3 id="qtitle">Get a Quote</h3>
+    <p>Choose how you want to contact me</p>
+    <div class="qlist">
+      <a class="qopt" data-link="tel" href="#"><span class="qi q-call"><i class="fa-solid fa-phone"></i></span><span><b>Call</b><small data-c="phoneDisplay"></small></span></a>
+      <a class="qopt" data-link="whatsapp" data-wa="getting a quote" target="_blank" rel="noopener" href="#"><span class="qi q-wa"><i class="fa-brands fa-whatsapp"></i></span><span><b>WhatsApp</b><small data-c="phoneDisplay"></small></span></a>
+      <a class="qopt" data-link="mail" href="#"><span class="qi q-mail"><i class="fa-solid fa-envelope"></i></span><span><b>Email</b><small data-c="email"></small></span></a>
+      <a class="qopt" data-link="instagram" target="_blank" rel="noopener" href="#"><span class="qi q-ig"><i class="fa-brands fa-instagram"></i></span><span><b>Instagram</b><small data-c="instagramHandle"></small></span></a>
+      <a class="qopt" data-link="facebook" target="_blank" rel="noopener" href="#"><span class="qi q-fb"><i class="fa-brands fa-facebook-f"></i></span><span><b>Facebook</b><small>Message me on Facebook</small></span></a>
+    </div>
+  </div>
+</div>
+
+<script src="contact.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
